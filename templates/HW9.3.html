@@ -1,0 +1,17 @@
+
+
+<form action="/led1" method="POST">
+    <label>LED 1 : </label>
+    <input name="led1State" type="submit" value="ON">
+    <input name="led1State" type="submit" value="OFF">
+</form>
+
+<form action="/led2" method="POST">
+    <label>LED 2 : </label>
+    <input name="led2State" type="submit" value="ON">
+    <input name="led2State" type="submit" value="OFF">
+</form>
+
+{% if ledstate %}
+     LED {{ id }} State : {{ ledstate }}
+{% endif %}
